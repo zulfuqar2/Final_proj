@@ -1,6 +1,3 @@
-import { addWeather } from "../state/actions/WeatherAction";
-import { removeWeather } from "../state/actions/RemoveWheather";
-
 const initialState = {
     weatherData: [], 
   };
