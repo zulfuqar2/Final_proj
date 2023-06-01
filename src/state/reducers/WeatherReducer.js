@@ -1,8 +1,11 @@
+import { addWeather } from "../state/actions/WeatherAction";
+import { removeWeather } from "../state/actions/RemoveWheather";
+
 const initialState = {
-    weatherData: [], // Hava durumu verileri için boş bir dizi
+    weatherData: [], 
   };
   
-  const weatherReducer = (state = initialState, action) => {
+  const WeatherReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'ADD_WEATHER':
         return {
@@ -21,5 +24,5 @@ const initialState = {
     }
   };
   
-  export default weatherReducer;
+  export default WeatherReducer;
   
